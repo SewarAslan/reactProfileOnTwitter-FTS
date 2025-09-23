@@ -1,0 +1,6 @@
+.rightSidebar {
+  border-left: 0.667px rgb(113, 118, 123) solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
