@@ -1,0 +1,15 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 4px 6px;
+  margin: 2px 0;
+  cursor: pointer;
+}
+.name {
+  font-weight: 400;
+  margin: 6px 0;
+}
+.itemIcon {
+  font-size: 20px;
+}
