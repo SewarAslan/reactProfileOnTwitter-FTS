@@ -1,0 +1,28 @@
+.sidebarProfile {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.userImage {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+.name-profile {
+  font-size: 20px;
+  font-weight: 500;
+}
+.userName-profile {
+  font-size: 15px;
+  font-weight: 300;
+  color: gray;
+}
