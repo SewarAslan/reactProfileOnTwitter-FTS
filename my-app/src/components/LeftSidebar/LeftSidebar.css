@@ -8,3 +8,8 @@
   font-size: 30px;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .leftSidebar {
+    display: none;
+  }
+}

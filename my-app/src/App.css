@@ -9,3 +9,15 @@
   font-optical-sizing: auto;
   color: #e3e3e3;
 }
+
+@media (max-width: 1024px) {
+  .App {
+    grid-template-columns: 88px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}
