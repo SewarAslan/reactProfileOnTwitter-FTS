@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #222222;
+  border-radius: 30px;
+  padding: 12px 12px;
+  margin: 0 20px 20px 20px;
+}
+.cardTitle {
+  color: #e7e9ea;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  display: block;
+
+  margin: 12px;
+  align-self: flex-start;
+}
