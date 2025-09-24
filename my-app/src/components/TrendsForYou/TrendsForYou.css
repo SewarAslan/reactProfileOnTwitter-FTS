@@ -1,0 +1,48 @@
+.trend-content {
+  width: 100%;
+}
+.trend-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 0 0 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.trend-category {
+  color: #71767b;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.trend-hashtag {
+  color: #e7e9ea;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 2px;
+}
+.trend-posts {
+  color: #71767b;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.trends-expand {
+  align-self: start;
+  margin-left: 10px;
+}
+.show-more {
+  background: none;
+  border: none;
+  color: #1d9bf0;
+  cursor: pointer;
+  font: inherit;
+}
+.trend-icon {
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
