@@ -26,3 +26,8 @@
   font-weight: 300;
   color: gray;
 }
+@media (max-width: 1024px) {
+  .information {
+    display: none;
+  }
+}
