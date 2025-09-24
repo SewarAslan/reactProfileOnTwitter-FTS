@@ -1,0 +1,5 @@
+.mainContent {
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 0.667px solid rgb(113, 118, 123);
+}
