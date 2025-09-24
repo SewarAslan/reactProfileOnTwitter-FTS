@@ -7,6 +7,7 @@ export default function SidebarProfile({
 }) {
   return (
     <div className={`sidebarProfile ${className}`}>
+
       <img className="userImage" src={imageUrl} alt="profilePicture" />
       <div className="information">
         <span className="name-profile">{name}</span>

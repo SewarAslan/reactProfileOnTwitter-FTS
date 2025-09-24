@@ -34,6 +34,7 @@ export default function Button({ color, text, size }) {
   return (
     <button
       className="Button"
+
       style={{
         ...sizeStyle[size],
         ...colorStyle[color],
