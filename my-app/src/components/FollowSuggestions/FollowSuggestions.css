@@ -29,3 +29,14 @@
   cursor: pointer;
   font: inherit;
 }
+.followSuggestions.main .cardTitle {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.followSuggestions.main {
+  background: none;
+  padding: 0;
+  margin: 0;
+}

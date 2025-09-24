@@ -25,9 +25,12 @@ const suggestions = [
   },
 ];
 
-export default function FollowSuggestions() {
+export default function FollowSuggestions({
+  title = "You might like",
+  className = "",
+}) {
   return (
-    <Card cardTitle="You might like">
+    <Card cardTitle={title} className={className}>
       <div className="suggest-content">
         {suggestions.map((user, index) => (
           <div className="suggest-item" key={index}>

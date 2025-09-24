@@ -4,7 +4,7 @@ export default function NavItem({ name, icon }) {
   return (
     <li className="listItem">
       <FontAwesomeIcon icon={icon} className="itemIcon" />
-      <h3 className="name">{name}</h3>
+      <h3 className="item-name">{name}</h3>
     </li>
   );
 }

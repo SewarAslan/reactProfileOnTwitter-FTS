@@ -11,7 +11,7 @@ export default function ProfileHeader() {
       <div className="profileInfo">
         <img
           className="profileImage"
-          src="https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK_400x400.png"
+          src="https://images.icon-icons.com/2108/PNG/512/react_icon_130845.png"
           alt="React profile"
         />
         <div className="details">
