@@ -1,0 +1,51 @@
+.sidebarFooter {
+  padding: 20px;
+  background-color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #71767b;
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #71767b;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 16px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+/* Add dot "·" between links */
+.footer-link::after {
+  content: "·";
+  margin: 0 4px;
+  color: #71767b;
+}
+
+/* Remove dot after last link */
+.footer-link:last-child::after {
+  content: "";
+}
+
+/* Hover effect like Twitter */
+.footer-link:hover {
+  color: #d9d9d9;
+}
+
+.copy-right {
+  color: #71767b;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
