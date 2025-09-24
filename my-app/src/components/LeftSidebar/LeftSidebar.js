@@ -12,12 +12,12 @@ import {
   faUser as farUser,
 } from "@fortawesome/free-regular-svg-icons";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
-
 import "./LeftSidebar.css";
 import Button from "../Button";
 import NavList from "../navList";
 import SidebarProfile from "../SidebarProfile";
-export default function LeftSidebar() {
+
+export default function LeftSidebar({ isCollapsed }) {
   const navItems = [
     { name: "Home", icon: faHouse },
     { name: "Explore", icon: faMagnifyingGlass },
@@ -28,11 +28,16 @@ export default function LeftSidebar() {
     { name: "Profile", icon: farUser },
     { name: "More", icon: faEllipsis },
   ];
+
   return (
-    <div className="leftSidebar ">
+    <div className={`leftSidebar ${isCollapsed ? "collapsed" : ""}`}>
       <FontAwesomeIcon icon={faXTwitter} className="brandIcon" />
       <NavList items={navItems} />
-      <Button color={"blue"} text={"Post"} size={"large"}></Button>
+      <Button
+        color={"blue"}
+        text={"Post"}
+        size={isCollapsed ? "small" : "large"}
+      />
       <SidebarProfile
         imageUrl={"/sewarProfile.png"}
         name={"Sewar Aslan"}

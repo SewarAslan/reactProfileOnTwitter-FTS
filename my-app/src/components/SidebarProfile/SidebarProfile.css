@@ -5,29 +5,43 @@
   align-items: center;
   padding: 15px;
 }
+
 .userImage {
   border-radius: 100%;
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
+
 .information {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0;
 }
+
 .name-profile {
   font-size: 20px;
   font-weight: 500;
 }
+
 .userName-profile {
   font-size: 15px;
   font-weight: 300;
   color: gray;
 }
-@media (max-width: 1024px) {
-  .information {
-    display: none;
-  }
+
+.leftSidebar.collapsed .sidebarProfile {
+  padding: 12px 0;
+  justify-content: center;
+}
+
+.leftSidebar.collapsed .information {
+  display: none;
+}
+
+.leftSidebar.collapsed .userImage {
+  width: 40px;
+  height: 40px;
+  margin-right: 0;
 }

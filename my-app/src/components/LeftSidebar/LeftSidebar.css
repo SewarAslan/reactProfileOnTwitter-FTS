@@ -3,13 +3,21 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100vh;
+  overflow-y: hidden;
 }
+
 .brandIcon {
   font-size: 30px;
   padding: 10px;
 }
-@media (max-width: 768px) {
-  .leftSidebar {
-    display: none;
-  }
+
+.leftSidebar.collapsed {
+  align-items: center;
+  gap: 0;
+  padding-right: 10px;
+}
+
+.leftSidebar.collapsed .brandIcon {
+  padding: 12px 0;
 }
