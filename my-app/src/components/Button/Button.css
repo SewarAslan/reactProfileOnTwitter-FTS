@@ -13,7 +13,7 @@
 }
 
 .Button--small {
-  padding: 4px 10px;
+  padding: 10px 10px;
   font-size: 12px;
 }
 .Button--medium {
@@ -36,6 +36,7 @@
 .Button--black {
   background-color: black;
   color: white;
+  border: white 1px solid;
 }
 .Button--white {
   background-color: white;

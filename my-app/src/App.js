@@ -3,8 +3,31 @@ import LeftSidebar from "./components/LeftSidebar";
 import MainContent from "./components/MainContent";
 import RightSidebar from "./components/RightSidebar";
 import { useState, useEffect } from "react";
+
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [suggestionData] = useState([
+    {
+      imageUrl: "https://play.tailwindcss.com/social-square.jpg",
+      name: "Tailwind CSS",
+      userName: "tailwindcss",
+      verified: true,
+    },
+    {
+      imageUrl:
+        "https://www.dsebastien.net/content/images/2022/12/typescript-1.svg",
+      name: "TypeScript",
+      userName: "typescript",
+      verified: false,
+    },
+    {
+      imageUrl:
+        "https://s3.amazonaws.com/freecodecamp/freecodecamp-square-logo-large.jpg",
+      name: "freeCodeCamp.org",
+      userName: "freeCodeCamp",
+      verified: true,
+    },
+  ]);
 
   useEffect(() => {
     const handleResize = () => setScreenWidth(window.innerWidth);
@@ -26,8 +49,8 @@ function App() {
   return (
     <div className="App" style={{ gridTemplateColumns }}>
       <LeftSidebar isCollapsed={isCollapsed} />
-      <MainContent />
-      {showRightSidebar && <RightSidebar />}
+      <MainContent suggestions={suggestionData} />
+      {showRightSidebar && <RightSidebar suggestions={suggestionData} />}
     </div>
   );
 }

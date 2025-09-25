@@ -13,7 +13,10 @@ export default function Post({
   authorHandle,
   time,
   content,
-  likes,
+  comments = 0,
+  retweets = 0,
+  likes = 0,
+  views = 0,
 }) {
   return (
     <div className="post">
@@ -26,14 +29,28 @@ export default function Post({
         </div>
         <p className="content">{content}</p>
         <div className="actions">
-          <FontAwesomeIcon icon={faComment} className="icon" />
-          <span>46</span>
-          <FontAwesomeIcon icon={faRetweet} className="icon" />
-          <span>675</span>
-          <FontAwesomeIcon icon={faHeart} className="icon" />
-          <span>3,701</span>
-          <FontAwesomeIcon icon={faChartBar} className="icon" />
-          <span>1.5M</span>
+          <div>
+            <FontAwesomeIcon icon={faComment} className="icon" />
+            <span>{comments}</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faRetweet} className="icon" />
+            <span>{retweets}</span>
+          </div>
+
+          <div>
+            <FontAwesomeIcon icon={faHeart} className="icon" />
+            <span>{likes}</span>
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faHeart} className="icon" />
+            <span>{likes}</span>
+          </div>
+
+          <div>
+            <FontAwesomeIcon icon={faChartBar} className="icon" />
+            <span>{views}</span>
+          </div>
         </div>
       </div>
     </div>

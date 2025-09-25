@@ -1,38 +1,71 @@
 import "./ProfileHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronLeft,
+  faBell,
+  faCalendarAlt,
+  faEllipsis,
+} from "@fortawesome/free-solid-svg-icons";
 import Button from "../Button";
+import { faBlackTie } from "@fortawesome/free-brands-svg-icons";
 
-export default function ProfileHeader() {
+export default function ProfileHeader({
+  profileImage,
+  name,
+  handle,
+  description,
+  joinDate,
+  followers,
+  following,
+  isFollowing = false,
+}) {
   return (
     <div className="profileHeader">
       <div className="banner"></div>
-
+      <div className="topNav">
+        <button className="backButton">
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+      </div>
       <div className="profileInfo">
         <img
           className="profileImage"
-          src="https://images.icon-icons.com/2108/PNG/512/react_icon_130845.png"
-          alt="React profile"
+          src={profileImage}
+          alt={`${name} profile`}
         />
+        <div className="headerActions">
+          <Button
+            text={<FontAwesomeIcon icon={faEllipsis} />}
+            color="black"
+            size="small"
+          ></Button>
+          <Button
+            text={<FontAwesomeIcon icon={faBell} />}
+            color="black"
+            size="small"
+          ></Button>
+          <Button
+            color="black"
+            text={isFollowing ? "Following" : "Follow"}
+            size="medium"
+          />
+        </div>
         <div className="details">
-          <h1 className="name">React</h1>
-          <span className="handle">@reactjs</span>
-          <p className="description">
-            The library for web and native user interfaces
-          </p>
+          <h1 className="name">{name}</h1>
+          <span className="handle">@{handle}</span>
+          <p className="description">{description}</p>
           <div className="stats">
             <FontAwesomeIcon icon={faCalendarAlt} className="icon" />
-            <span>Joined July 2013</span>
+            <span>Joined {joinDate}</span>
           </div>
           <div className="followers">
             <span>
-              <strong>708.1K</strong> Followers
+              <strong>{followers}</strong> Followers
             </span>
             <span>
-              <strong>708</strong> Following
+              <strong>{following}</strong> Following
             </span>
           </div>
-          <Button color="white" text="Following" size="medium" />
         </div>
       </div>
     </div>
