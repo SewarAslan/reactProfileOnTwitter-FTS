@@ -1,0 +1,10 @@
+.mainContent {
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 0.667px solid rgb(113, 118, 123);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.mainContent::-webkit-scrollbar {
+  display: none;
+}

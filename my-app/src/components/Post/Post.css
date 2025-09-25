@@ -1,0 +1,51 @@
+.post {
+  display: flex;
+  padding: 16px;
+  border-bottom: 1px solid rgb(113, 118, 123);
+  cursor: pointer;
+}
+
+.authorImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.postContent {
+  flex: 1;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.authorName {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.authorHandle,
+.time {
+  color: #71767b;
+  margin-right: 4px;
+}
+
+.content {
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 40px;
+  margin-top: 8px;
+  color: #71767b;
+  font-size: 13px;
+}
+
+.icon {
+  margin-right: 4px;
+}
