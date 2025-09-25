@@ -20,13 +20,6 @@ import SidebarProfile from "../SidebarProfile";
 export default function LeftSidebar() {
   const navItems = [
     { name: "Home", icon: faHouse },
-    { name: "Explore", icon: faMagnifyingGlass },
-    { name: "Notifications", icon: farBell },
-    { name: "Messages", icon: farEnvelope },
-    { name: "Lists", icon: faList },
-    { name: "Bookmarks", icon: farBookmark },
-    { name: "Profile", icon: farUser },
-    { name: "More", icon: faEllipsis },
   ];
   return (
     <div className="leftSidebar ">
