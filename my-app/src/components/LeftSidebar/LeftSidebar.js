@@ -20,6 +20,7 @@ import SidebarProfile from "../SidebarProfile";
 export default function LeftSidebar() {
   const navItems = [
     { name: "Home", icon: faHouse },
+    { name: "Explore", icon: faMagnifyingGlass },
   ];
   return (
     <div className="leftSidebar ">
