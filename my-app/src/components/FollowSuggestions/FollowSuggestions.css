@@ -1,0 +1,31 @@
+.suggest-item {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+.suggest-profile {
+  padding-left: 0;
+
+  .name-profile {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .userImage {
+    width: 40px;
+    height: 40px;
+  }
+}
+.suggest-content {
+  width: 100%;
+}
+.suggest-expand {
+  align-self: start;
+  margin-left: 10px;
+}
+.show-more {
+  background: none;
+  border: none;
+  color: #1d9bf0;
+  cursor: pointer;
+  font: inherit;
+}
